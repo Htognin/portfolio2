@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesom/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <section2>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container">
+            <header>
+                <a href="#" class="logo">Logo</a>
+                <ul>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="about">About</a></li>
+                    <li><a href="#" id="team">Team</a></li>
+                    <li><a href="#" id="content">Content</a></li>
+                </ul>
+            </header>
+            <header1 id="konten1">
+                <div class="home">
+                    <!-- display none nyala jadi ga keliatan  -->
+                    <div class="judul">
+                        <h1>ADCOM</h1>
+                    </div>
+                    <div class="isi">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias laborum qui consequatur cum sequi sit voluptates deleniti laboriosam exercitationem aspernatur eveniet, ducimus dignissimos quos ratione deserunt voluptatem ipsa vero.
+                        </p>
+                        <div class="tombol">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </header1>
+
+            <header2 id="konten2">
+                <div class="bgkonten2" id="konten3">
+                    <div class="about" id="konten3.1">
+                        <h1>ADCOM</h1>
+                        <p>ANDROID DEVELOPER COMUNITY</p>
+                        <div class="garis"></div>
+                        <div class="isi"></div>
+                        <h3>ABOUT ADCOM</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, pariatur laboriosam nam iste aut vero ex tempore. Sed nam at eius inventore quis explicabo minus ratione ipsam? Officiis, fuga quos?</p>
+                        <div class="button">
+                            <a href="">see more</a>
+                        </div>
+                        <img src="3560379405e9a299f685b5fa07d14339-removebg-preview.png" height="350px" alt="">
+                    </div>
+                    <div class="object"></div>
+                </div>
+            </header2>
+
+            <div class="team"id="kontenteam">
+                <div class="tim">
+                    <div class="card">
+                        <img src="50332e9e72cdc57bf9523fa8587c122f-removebg-preview.png" height="300px" alt="">
+                        <div class="img-title">
+                            <h1>LEADER</h1>
+                            <P>Elon Musk</P>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="50332e9e72cdc57bf9523fa8587c122f-removebg-preview.png" height="300px" alt="">
+                        <div class="img-title">
+                            <h1>CO-LEADER</h1>
+                            <p>Elon Muslik</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="50332e9e72cdc57bf9523fa8587c122f-removebg-preview.png" height="300px" alt="">
+                        <div class="img-title">
+                            <h1>CO-LEADER</h1>
+                            <p>Elon Muslihat</p>
+                         </div>
+                     </div> 
+                </div>  
+            </div>       
+     </div>
+        <div class="box" id="kotak" >
+            <!-- display none nyala jadi ga keliatan -->
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+        </div>
+    </section2>
+
+    <script>
+        var home= document.getElementById("home");
+        var about= document.getElementById("about");
+        var team=document.getElementById("team");
+        var kontenteam=document.getElementById("kontenteam")
+        var konten1=document.getElementById("konten1");
+        var konten2=document.getElementById("konten2");
+        var konten3=document.getElementById("konten3");
+        var kotak=document.getElementById("kotak");
+        home.addEventListener("click", ()=>{
+            konten1.style.display="block"
+            konten2.style.display="none"
+            kotak.style.display="block"
+            kontenteam.style.display="none"
+
+        }) 
+        about.addEventListener("click", ()=>{
+            konten1.style.display="none"
+            konten2.style.display="block"
+            konten3.style.display="block"
+            kotak.style.display="none"
+            kontenteam.style.display="none"
+        })  
+        team.addEventListener("click", ()=>{
+            konten1.style.display="none"
+            konten2.style.display="none"
+            konten3.style.display="none"
+            kotak.style.display="none"
+            kontenteam.style.display="block"
+        })   
+    </script>
+</body>
+</html>

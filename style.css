@@ -1,0 +1,364 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: #111;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to  bottom, #f1f4f9,#a8d5f7);
+        
+    }   
+
+    section1 .color{
+        position: absolute;
+        filter: blur(150px);
+        z-index: 1;
+    }
+
+    section1 .color:nth-child(1){
+        top: -300px;
+        width: 800px;
+        height: 700px;
+        background: #ff359b;
+        z-index: 1;
+    }
+
+    section1 .color:nth-child(3){
+        bottom: -200px;
+        left: 100px;
+        width: 800px;
+        height: 700px;
+        background: #35ebff;
+    }
+
+    section1 .color:nth-child(2){
+        bottom: 50px;
+        right: 100px;
+        width: 500px;
+        height: 600px;
+        background: #fffd87;
+    }
+
+    .box{
+        position: relative;
+        z-index: 1;
+    }
+
+    .box .kotak{
+        position: absolute;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);  
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px; 
+        background: rgba(255, 255, 255, 0.1);
+        animation: animate 10s linear infinite;
+        animation-delay: calc(-1s* var(--i));
+    }
+    @keyframes animate{
+        0%,100%{
+            transform: translateY(-40px);
+        }
+        50%{
+            transform: translateY(40px);
+        }
+    }
+
+    .box .kotak:nth-child(1){
+        top: -30px;
+        right: -50px;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .box .kotak .logo{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .box .kotak:nth-child(2){
+        top: -80px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .box .kotak .logo2{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .box .kotak:nth-child(3){
+        top: 10px;
+        right: 70px;
+        width: 45px;
+        height: 45px;
+        z-index: 2;
+    }
+
+    .box .kotak .logo3{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    .box .kotak:nth-child(4){
+        top: -90px;
+        right: -80px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .box .kotak .logo4{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .box .kotak:nth-child(5){
+        top: 200px;
+        left: -50px;
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .box .kotak .logo5{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .box .kotak:nth-child(6){
+        top: 300px;
+        left: -90px;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .box .kotak .logo6{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 70px;
+        height: 70px;
+    }
+
+    .box .kotak:nth-child(7){
+        top: -50px;
+        left: 80px;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+    }
+    .box .kotak .logo7{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+    .box .kotak:nth-child(8){
+        top: -20px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .box .kotak .logo8{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .box .kotak:nth-child(9){
+        bottom: 50px;
+        right: 120px;
+        width: 80px;
+        height: 80px;
+
+    }
+    .box .kotak .logo9{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .box .kotak:nth-child(10){
+        bottom: 30px;
+        right: 70px;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+    }
+
+    .box .kotak .logo10{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .box .kotak:nth-child(11){
+        bottom: 50px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+
+    }
+    .box .kotak .logo11{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+    .container{
+        position: relative;
+        width: 500px;
+        min-height: 500px;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);  
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    }
+
+
+    .form{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        
+    }
+
+
+    .form h2{
+        position: relative;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 1PX;
+        margin-bottom: 45PX;
+    }
+
+    .form h2::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 80px;
+        height: 4px;
+        background: rgb(255, 255, 255);
+    }
+
+    .form .input{
+        width: 100%;
+        margin-top: 20px;
+
+
+    }
+
+    .form .input input{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        outline: none;
+        padding: 20px 30px;
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);  
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .form .input input::placeholder{
+        color: #fff;
+    }
+
+    .form .input input[type="submit"]{
+        background: #fff;
+        width: 120px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .form .input:hover{
+        -webkit-animation-: scale(1.01,1.01);
+        transform: scale(1.01,1.01);
+    }
+
+    .forget {
+        color: #fff;
+        font-size: 100%;
+        font-weight: 500;
+    }
+
+    .form .masuk{
+        position: relative;
+        border-radius: 30px;
+        width: 120px;
+        background: #ffffff;
+        height: 57px;
+    }
+   .masuk a{
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    }

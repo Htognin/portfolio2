@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section1>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="box">
+        <div class="kotak" style="--i:0:">
+          <div class="logo">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="60"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 1">
+          <div class="logo2">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="35"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 2">
+          <div class="logo3">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="25"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 3">
+          <div class="logo4">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="40"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 4">
+          <div class="logo5">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="55"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 5">
+          <div class="logo6">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="50"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 6">
+          <div class="logo7">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="40"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="kotak" style="--i: 7">
+          <div class="logo8">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="25"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="kotak" style="--i: 8">
+          <div class="logo9">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="45"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="kotak" style="--i: 9">
+          <div class="logo10">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="30"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="kotak" style="--i: 10">
+          <div class="logo11">
+            <img
+              src="Picsart_23-01-18_21-47-01-282-removebg-preview.png"
+              height="40"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="form">
+            <h2>Login Form</h2>
+            <!-- <form action=""> -->
+            <div class="input">
+              <input
+                type="text"
+                placeholder="Username (bayu@gmail.com)"
+                id="email"
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                placeholder="Password (123)"
+                id="password"
+                required
+              />
+            </div>
+            <div class="input">
+              <input type="submit" value="Login"" onclick="login()" required/>
+            </div>
+            <p class="forget">Forgot Password ? <a href="#">click here</a></p>
+            <p class="forget">
+              Don't have account ? <a href="#">click here</a>
+            </p>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </section1>
+  </body>
+
+  <script>
+    function login() {
+      let emailUser = 'bayu@gmail.com';
+      let passwordUser = '123';
+
+      var email = document.querySelector('#email').value;
+      var password = document.querySelector('#password').value;
+
+      // location.replace('Content/content.html');
+
+      if (email === emailUser && password === passwordUser) {
+        // alert('login');
+        // window.location.assign('./Content/content.html')
+        location.replace('Content/content.html');
+      } else {
+        alert('invalid');
+      }
+    }
+  </script>
+</html>
